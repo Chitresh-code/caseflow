@@ -1,12 +1,8 @@
-import React from 'react'
+import { Dialog, DialogContent, } from "@/components/ui/dialog"
 import Image from 'next/image';
-
-import {
-    Dialog,
-    DialogContent,
-  } from "@/components/ui/dialog"
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
+import React, { ReactNode } from 'react'
 
   
 
