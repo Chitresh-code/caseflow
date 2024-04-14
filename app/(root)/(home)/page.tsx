@@ -12,7 +12,7 @@ const Home = () => {
     const options = { timeZone: 'Asia/Kolkata', hour12: true, hour: '2-digit', minute: '2-digit' };
 
     const now = new Date();
-    const time = now.toLocaleTimeString(indianTimeZone, options);
+    const time = now.toLocaleTimeString(indianTimeZone, { ...options, hour: '2-digit' });
     const date = now.toLocaleDateString(indianTimeZone, { dateStyle: 'full' });
 
     setIndianTime(time);
